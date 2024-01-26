@@ -1,4 +1,5 @@
 import { createRoot } from 'react-dom/client'
+import { App } from './ui/App'
 
 const rootElement = document.querySelector('#root')
 
@@ -8,8 +9,4 @@ if (!rootElement) {
 
 const root = createRoot(rootElement)
 
-root.render(
-  <div>
-    <h1>Hello World!</h1>
-  </div>,
-)
+root.render(<App />)
